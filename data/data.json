@@ -1,0 +1,34 @@
+{
+    "mesaje": [
+        {
+            "data": "09.06.2026 08:49:16",
+            "nume": "Soldier Boy",
+            "email": "tungtungsahur@gmail.com",
+            "subiect": "teorie",
+            "mesaj": "Hello!"
+        }
+    ],
+    "utilizatori": [
+        {
+            "id": "6a1e66b171aa5",
+            "username": "InvisibleManAction10",
+            "email": "alan@gmail.com",
+            "parola": "$2y$10$WulBvRLTnsHjZbgATL1PQuGVZyIgBcwXRE.jiJmOOi2VuQijuy0EO",
+            "data": "02.06.2026 07:14:25"
+        },
+        {
+            "id": "6a1e76692c689",
+            "username": "TripleT",
+            "email": "tungtungsahur@gmail.com",
+            "parola": "$2y$10$1hTVD3WcVK2Qr4eWlyrHJOWXzfWlYBC7XLMFiOGBjo3Da416TJcdK",
+            "data": "02.06.2026 08:21:29"
+        },
+        {
+            "id": "6a27ac4fb9abd",
+            "username": "DoubleT",
+            "email": "1234@gmail.com",
+            "parola": "$2y$10$eaXIAlBx9fR1id1HTAWsZuuihFZbredPx\/XoRrWOqcc\/dcparmf.q",
+            "data": "09.06.2026 08:01:51"
+        }
+    ]
+}

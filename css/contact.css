@@ -1,0 +1,213 @@
+/* ============================================================
+   css/contact.css — Stiluri pentru pagina de contact
+   Se adaugă LÂNGĂ css/index.css, nu îl înlocuiește
+   ============================================================ */
+
+/* ---- Wrapper principal ---- */
+.contact-wrapper {
+    max-width: 680px;
+    margin: 80px auto 60px;
+    padding: 0 1.5rem;
+}
+
+/* ---- Titlu secțiune ---- */
+.contact-header {
+    margin-bottom: 2rem;
+    border-left: 4px solid #CC0000;
+    padding-left: 1rem;
+}
+
+.contact-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #fff;
+    margin: 0 0 6px;
+    text-transform: uppercase;
+}
+
+.contact-subtitle {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+/* ---- Alerte succes / eroare ---- */
+.alert {
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.alert-success {
+    background: #0d2b0d;
+    border-left: 4px solid #2ecc40;
+    color: #7ddb7d;
+}
+
+.alert-error {
+    background: #2b0d0d;
+    border-left: 4px solid #CC0000;
+    color: #ff8080;
+}
+
+.alert-error p {
+    margin: 4px 0;
+}
+
+/* ---- Formularul ---- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Rând cu două câmpuri alăturate */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Grup individual câmp */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Label */
+.form-group label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+.req {
+    color: #CC0000;
+}
+
+/* Input, select, textarea — același stil */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #e8e8e8;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 0.65rem 0.9rem;
+    outline: none;
+    border-radius: 2px;
+    transition: border-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #CC0000;
+}
+
+/* Select — săgeată custom */
+.contact-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+.contact-form select option {
+    background: #111;
+}
+
+/* Textarea */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 130px;
+    line-height: 1.6;
+}
+
+.char-hint {
+    font-size: 11px;
+    color: #555;
+    align-self: flex-end;
+}
+
+/* Buton submit */
+.submit-btn {
+    background: #CC0000;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.85rem 2rem;
+    cursor: pointer;
+    border-radius: 2px;
+    align-self: flex-start;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background: #990000;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Link activ în navbar pentru pagina de contact */
+.nav-links .active {
+    color: #CC0000 !important;
+    font-weight: 700;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 520px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+}
+
+.auth-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #2a2a2a;
+}
+
+.auth-tab {
+    padding: 0.7rem 2rem;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #888;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.auth-tab:hover {
+    color: #e8e8e8;
+}
+
+.auth-tab.active {
+    color: #fff;
+    border-bottom: 2px solid #CC0000;
+}
